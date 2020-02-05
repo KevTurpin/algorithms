@@ -12,7 +12,7 @@ namespace Algorithms.Host
             DoJamesTests();
             DoGraphTestAsInt();
             DoGraphTestAsStrings();
-            
+            DoBreadthFirstSearchOfBinaryTree();
             Console.ReadKey(); 
         }
 
@@ -35,7 +35,6 @@ namespace Algorithms.Host
         
         static void DoGraphTestAsInt() 
         { 
-            Console.WriteLine("Starting Graph Test as int");
             var g = new Graph<int>(0, 1, 2, 3); 
 
             g.AddEdge(0, 1); 
@@ -47,12 +46,12 @@ namespace Algorithms.Host
 
             var searchAlgorithm = new DepthFirstSearch<int>();
             var result = searchAlgorithm.DoSearch(g, 2);
-            Console.WriteLine(result);
+            
+            Console.WriteLine($"DepthFirstSearch On a graph int: {result}");
         }
         
         static void DoGraphTestAsStrings() 
-        { 
-            Console.WriteLine("Starting Graph Test as int");
+        {
             var g = new Graph<string>("A", "B", "C", "D", "E", "F"); 
 
             g.AddEdge("A", "B"); 
@@ -68,9 +67,8 @@ namespace Algorithms.Host
             
             var searchAlgorithm = new DepthFirstSearch<string>();
             var result = searchAlgorithm.DoSearch(g, "A");
-            Console.WriteLine(result);
+            Console.WriteLine($"DepthFirstSearch on a Graph of string: {result}");
             
-            Console.WriteLine(result);
         }
 
         static void DoBreadthFirstSearchOfBinaryTree()
@@ -85,6 +83,8 @@ namespace Algorithms.Host
             var searchAlgorithm = new BreadthFirstSearch();
             
             var result = searchAlgorithm.Traverse(tree);
+            
+            Console.WriteLine($"BreadthFirstSearch on a BinaryTree: {result}");
         }
         
     }
