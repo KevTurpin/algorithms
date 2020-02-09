@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Algorithms.Host.Traversal
+namespace Algorithms.Host.SimpleProblems
 {
     public static class JamesQuestion1
     {

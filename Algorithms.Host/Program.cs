@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Algorithms.Host.DataStructures;
+using Algorithms.Host.SimpleProblems;
 using Algorithms.Host.Traversal;
 
 namespace Algorithms.Host

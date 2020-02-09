@@ -4,7 +4,6 @@ using Algorithms.Host.DataStructures;
 
 namespace Algorithms.Host.Traversal
 {
-    
     public class DepthFirstSearch<TNode>
     {
         private Graph<TNode> _graph;
